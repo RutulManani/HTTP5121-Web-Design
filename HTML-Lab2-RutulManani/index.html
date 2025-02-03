@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB-2 HTML Layout</title>
+</head>
+
+<body>
+    <header>
+        <h2 id="MainHeading">
+            <a href="#">Fake Store</a>
+        </h2>
+        <nav aria-label="main navigation">
+            <div class="List A">
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
+
+            <div class="List B">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <form method="post">
+
+        <main id="MainContent">
+            <h1 id="OrderHeading">Checkout Order #1234 - Billing and Payment</h1>
+            <p>Order total: $129.57</p>
+            <section>
+
+                <fieldset>
+
+                    <legend id="FormSection">Billing Information</legend>
+                    <div>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="John">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Doe">
+                    </div>
+
+                    <div>
+                        <label for="add">Address:</label>
+                        <input type="text" id="add" name="add" placeholder="123 Fake street">
+                    </div>
+
+                    <div>
+                        <label for="c">City:</label>
+                        <input type="text" id="c" name="c" placeholder="Toronto">
+                        <label for="selection">Province:</label>
+                        <select id="selection" name="selection">
+                            <option disabled selected>--Choose Province--</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="ON">Ontario</option>
+                            <option value="QC">Quebec</option>
+                        </select>
+                        <label for="P">Postal Code:</label>
+                        <input type="text" id="P" name="P" placeholder="A1A 1A1">
+                    </div>
+
+                    <div>
+                        <label for="ph">Phone Number:</label>
+                        <input type="text" id="ph" name="ph" placeholder="555-555-5555">
+                    </div>
+
+                </fieldset>
+
+            </section>
+        </main>
+
+        <aside>
+            <section>
+
+                <fieldset>
+
+                    <legend id="PaymentInfo">Payment Information</legend>
+                    <fieldset>
+                        <legend>Choose Card</legend>
+                        <div><input type="radio" id="master" name="card" value="card" checked>
+                            <label for="master">MasterCard</label>
+                        </div>
+                        <div><input type="radio" id="visa" name="card" value="card">
+                            <label for="visa">Visa</label>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <label for="cn">Card number:</label>
+                        <input type="text" id="cn" name="cn" placeholder="1234 1234 1234 1234">
+                    </div>
+
+                    <div>
+                        <label for="ce">Card expiry:</label>
+                        <input type="text" id="ce" name="ce" placeholder="MM/YY">
+                    </div>
+
+                </fieldset>
+                
+            </section>
+
+            <section>
+                <button type="submit">Pay Now</button>
+            </section>
+
+        </aside>
+
+    </form>
+
+    <footer>
+        <p>&copy; Copyright HTTP5121, 2024.</p>
+    </footer>
+
+</body>
+
+</html>
